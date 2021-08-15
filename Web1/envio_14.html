@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transicao</title>
+        <style>
+            body{
+            margin-top: 200px;
+            padding:0;
+            height:100%; 
+            box-sizing:border-box;
+            perspective: 2000px;
+            perspective-origin: top;  
+            
+            }
+            .pag {
+            transform-origin: 100% 50%;
+            transition: transform 4s;
+            transition-timing-function: ease-out;
+            background-color:white; 
+            height: 297px; width: 210px; 
+            float:left;
+            }
+            #pag1 {
+            border: 1px solid black;
+            }
+            #pag2 {
+                border: 1px solid black;
+            }
+            #capa { 
+            border: 1px solid black;
+            background-color:brown; 
+            height: 297px; width: 424px; 
+            transform-style: preserve-3d;
+            transform: translateZ(-400px) translateX(500px) rotateX(60deg);
+            }
+            #pag1:hover{
+            transform: rotateY(179deg) ;
+            }
+            #pag2 {
+            transform-origin: 0% 100%;
+            }
+            #pag2:hover{
+            transform: rotateY(-179deg) ;
+            }
+            .conteudo{
+            text-align: center;
+            font-size: 200%;
+            }
+            .square{
+            height:45px;width:45px; border: 1px solid black; 
+            }
+            #red{
+            background-color:red;
+            transform: translateX(20px) rotateZ(45deg);
+            }
+            #blue{ 
+            background-color:blue;
+            transform: translateX(69px);  <!--haha eu tenho 14 anos so much fun() -->
+            }
+            #green{ 
+            background-color:green;
+            transform: translateX(69px);
+        }
+        </style>
+    </head>
+    <body>
+        <div id="capa">
+	        <div class="pag" id="pag1">
+	            <div class="conteudo">
+	                <p>Pagina 1</p>
+	                <img src="http://www.canoas.ifrs.edu.br/site/img/logo_novo.png" alt="logo" height="100" width="100">   
+	            </div>
+	        </div>
+	        <div class="pag" id="pag2">
+		        <div class="conteudo">
+		            <p>Pagina 2</p>
+		            <div class="square" id="red">
+		                <div class="square" id="blue">
+		                    <div class="square" id="green">
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	    </div>
+    </body>
+</html>
