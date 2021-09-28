@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+    background: rgb(19, 19, 19);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+.navbar li {
+	float: left;
+}
+.navbar ul li:last-child { 
+	float: right; 
+}
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.navbar li a:hover {
+	background-color: #111;
+}	
+.navbar{
+	background-color: red;
+
+}
+.navbar li ul {
+	display: none;
+    position: absolute;
+}
+.navbar li:hover ul {
+	display: block;
+}
+button{
+    background-color: #555555;
+    margin: auto;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 768px){
+    table {
+        border-collapse: collapse;
+        
+        background-color: #333;
+        border: 7px ;
+    }
+}
+.main-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+    padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.bolder {
+	font-weight: bold;
+	background-color: #333;
+}
+
+thead {
+	background-color: #333;
+}
+
+tbody tr:hover {
+	background-color: #334;
+}
+th {
+	width: 25%;
+}
+table th:first-child {
+  border-radius:7px 0 0 0;
+}
+
+table th:last-child {
+  padding-right: 7px;
+  border-radius:0 7px 0  0;
+}
+
+
